@@ -1,0 +1,4 @@
+# Runtime: the MCP server only. Pinned to the MCP SDK production already runs.
+mcp==1.27.0
+uvicorn
+PyYAML

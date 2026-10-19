@@ -1,0 +1,12 @@
+---
+url: https://irsc.smartcatalogiq.com/en/current/catalog/courses/cos-cosmetology
+title: Catalog > Courses > COS - COSMETOLOGY
+updated: '2026-06-04'
+sha: e25dd50d50d6
+---
+
+# COS - COSMETOLOGY
+
+- [COS-0008](https://irsc.smartcatalogiq.com/en/current/catalog/courses/cos-cosmetology/0000/cos-0008)
+- [COS-0010](https://irsc.smartcatalogiq.com/en/current/catalog/courses/cos-cosmetology/0000/cos-0010)
+- [COS-0088](https://irsc.smartcatalogiq.com/en/current/catalog/courses/cos-cosmetology/0000/cos-0088)

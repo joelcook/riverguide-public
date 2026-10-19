@@ -1,0 +1,3 @@
+# Generated: the crawled pages and recorded eval runs.
+corpus/** linguist-generated=true
+evals/runs/** linguist-generated=true

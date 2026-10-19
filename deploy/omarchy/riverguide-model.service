@@ -1,0 +1,16 @@
+[Unit]
+Description=RiverGuide model gateway: Qwen for the RiverGuide Worker (127.0.0.1:8790)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Projects/riverguide
+EnvironmentFile=%h/.config/riverguide/model-gateway.env
+ExecStart=%h/.local/share/mise/installs/bun/1.4.2/bin/bun deploy/omarchy/model-gateway.ts
+Restart=always
+RestartSec=5
+UMask=0077
+
+[Install]
+WantedBy=default.target

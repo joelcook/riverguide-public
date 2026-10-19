@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "system": "v2",
+    "tier": "retrieval",
+    "model": null,
+    "effort": null,
+    "judge": false,
+    "started": "2026-10-14T14:57:56+00:00",
+    "prompt_sha256": "c51996457759",
+    "golden": "evals/golden.yaml",
+    "partial": false
+  },
+  "summary": {
+    "passed": 37,
+    "total": 45,
+    "by_category": {
+      "contradiction": {
+        "passed": 4,
+        "answer_passed": 4,
+        "total": 5
+      },
+      "hard_fact": {
+        "passed": 18,
+        "answer_passed": 18,
+        "total": 22
+      },
+      "narrative": {
+        "passed": 15,
+        "answer_passed": 15,
+        "total": 18
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "drop-deadline-fall-2026",
+      "category": "hard_fact",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'add or drop'"
+      ],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/fall-2026",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar",
+        "https://irsc.edu/programs/special-programs/dual-enrollment"
+      ]
+    },
+    {
+      "id": "tuition-instate-associate",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/teacher-education",
+        "https://irsc.edu/admissions/tuition-fees/estimated-costs",
+        "https://irsc.edu/admissions/military-veterans-services/va-benefits"
+      ]
+    },
+    {
+      "id": "enc1101-credits",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/associate-in-arts-degree/economics-track",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/associate-in-arts-degree/english-track",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/courses/enc-english/1000/enc-1101"
+      ]
+    },
+    {
+      "id": "nursing-program-exists",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/landing_page/health-services-nursing",
+        "https://irsc.edu/program/nursing",
+        "https://irsc.edu/about/accreditation"
+      ]
+    },
+    {
+      "id": "list-fall-terms",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/summer-2027",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/fall-2026"
+      ]
+    },
+    {
+      "id": "when-is-fafsa-due",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/financial-aid/applying-for-financial-aid",
+        "https://irsc.edu/admissions/financial-aid/types-aid/loans",
+        "https://irsc.edu/admissions/financial-aid/types-aid"
+      ]
+    },
+    {
+      "id": "fall-registration-opens",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/fall-2026",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar",
+        "https://irsc.edu/landing_page/workforce"
+      ]
+    },
+    {
+      "id": "radiology-prereqs",
+      "category": "hard_fact",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'BSC'"
+      ],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/courses/rte-radiography/1000/rte-1000",
+        "https://irsc.edu/program/radiography",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/courses/rte-radiography/1000/rte-1111"
+      ]
+    },
+    {
+      "id": "when-do-classes-start",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/landing_page/cdl",
+        "https://irsc.edu/program/commercial-vehicle-driving",
+        "https://irsc.edu/programs/continuing-education/commercial-vehicle-driving"
+      ]
+    },
+    {
+      "id": "criminal-justice-program",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/criminal-justice",
+        "https://irsc.edu/public-service/criminal-justice-institute",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/bachelor-degree-programs/bachelors-degree-program-in-criminal-justice/bachelor-of-science-in-criminal-justice"
+      ]
+    },
+    {
+      "id": "out-of-state-bachelor-tuition",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/tuition-fees/tuition-waivers",
+        "https://irsc.edu/admissions/tuition-fees",
+        "https://irsc.edu/admissions/tuition-fees/estimated-costs"
+      ]
+    },
+    {
+      "id": "mac1105-credits",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/courses/mac-mathematics/1000/mac-1105",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/associate-in-arts-degree/agriculture-general-track",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/associate-in-arts-degree/secondary-education-track"
+      ]
+    },
+    {
+      "id": "aa-accounting-retrieval",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/accounting-technology/accounting-technology-operations-certificate",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/accounting-technology/accounting-technology-specialist-certificate-60570",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/accounting-technology/accounting-applications-certificate"
+      ]
+    },
+    {
+      "id": "modality-online-program",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/bachelor-degree-programs/bachelors-degree-program-in-business-administration/bachelor-of-science-degree-in-business-administration",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/bachelor-degree-programs/bachelors-degree-program-in-business-administration",
+        "https://irsc.edu/landing_page/online-bachelor-degree"
+      ]
+    },
+    {
+      "id": "modality-nursing-clinical",
+      "category": "hard_fact",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'clinical'"
+      ],
+      "top": [
+        "https://irsc.edu/program/nursing",
+        "https://irsc.edu/programs/academic-resources-support/assessment-centers/hesi-a2-admissions-assessment-exam",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/courses/nur-bachelor-of-science-nursing/3000/nur-3065c"
+      ]
+    },
+    {
+      "id": "vet-tech-not-offered",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/ac-refrigeration-heating-systems-tech/associate-in-applied-science-in-air-conditioning-refrigeration-and-heating-systems-technology-degree",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/career-and-technical-education-programs/welding-technology",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/accounting-technology/associate-in-science-degree-in-accounting-technology"
+      ]
+    },
+    {
+      "id": "admissions-mailing-address",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/apply",
+        "https://irsc.edu/public-service",
+        "https://irsc.edu/admissions/military-veterans-services/va-benefits"
+      ]
+    },
+    {
+      "id": "spanish-drop-deadline",
+      "category": "hard_fact",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'agosto'"
+      ],
+      "top": [
+        "https://irsc.edu/admissions/tuition-fees/tuition-waivers",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/select-classes-and-register/changing-your-class-schedule",
+        "https://irsc.edu/support"
+      ]
+    },
+    {
+      "id": "student-help-desk-contact",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.libguides.com/StudentHelpDesk",
+        "https://irsc.libguides.com/c.php?g=1423899&p=11480614",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/aas-degrees-certificates/computer-information-technology/help-desk-support-technician-60630"
+      ]
+    },
+    {
+      "id": "pert-fee",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/faq",
+        "https://irsc.edu/admissions/tuition-fees/estimated-costs",
+        "https://irsc.edu/programs"
+      ]
+    },
+    {
+      "id": "promise-coverage",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/faq",
+        "https://irsc.edu/admissions/financial-aid/faqs",
+        "https://irsc.edu/admissions/promise"
+      ]
+    },
+    {
+      "id": "cdl-program",
+      "category": "hard_fact",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/commercial-vehicle-driving",
+        "https://irsc.edu/programs/continuing-education/commercial-vehicle-driving",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/bachelor-degree-programs/bachelors-degree-general-education-requirements"
+      ]
+    },
+    {
+      "id": "how-to-drop-class",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/select-classes-and-register/changing-your-class-schedule",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/pay-for-classes-tuition-and-fees/refunds",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/spring-2027"
+      ]
+    },
+    {
+      "id": "student-handbook-location",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/student-life",
+        "https://irsc.edu/admissions/student-standards-of-conduct",
+        "https://irsc.smartcatalogiq.com/en/current/catalog"
+      ]
+    },
+    {
+      "id": "how-to-apply-for-aid",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/criminal-justice",
+        "https://irsc.edu/admissions/financial-aid/applying-for-financial-aid",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/apply-for-financial-aid/financial-aid-and-attendance"
+      ]
+    },
+    {
+      "id": "how-to-register-for-classes",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/select-classes-and-register",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/select-classes-and-register/changing-your-class-schedule",
+        "https://irsc.edu/admissions/register-for-classes"
+      ]
+    },
+    {
+      "id": "how-to-apply-for-admission",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/fire-science",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/apply-for-admissions",
+        "https://irsc.edu/admissions/apply/associate-degree"
+      ]
+    },
+    {
+      "id": "how-to-get-transcript",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/submit/high-school-transcripts",
+        "https://irsc.edu/sending-transcripts",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-and-support-services/sending-indian-river-state-college-transcripts"
+      ]
+    },
+    {
+      "id": "reset-password",
+      "category": "narrative",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'Student Communications Center'",
+        "evidence missing 'Student Help Desk'"
+      ],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/student-life/student-standards-and-administration-of-discipline",
+        "https://irsc.edu/admissions/student-standards-of-conduct",
+        "https://irsc.edu/rivermail"
+      ]
+    },
+    {
+      "id": "find-rivermail",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://apply.irsc.edu/",
+        "https://irsc.edu/rivermail",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/student-life/student-standards-and-administration-of-discipline"
+      ]
+    },
+    {
+      "id": "who-is-my-advisor",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/title-ix",
+        "https://irsc.edu/admissions/financial-aid/receiving-and-using-your-financial-aid",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/contact-your-advisor"
+      ]
+    },
+    {
+      "id": "schedule-advising-appt",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/advising-services/riverline",
+        "https://irsc.edu/admissions/register-for-classes",
+        "https://irsc.edu/programs/academic-resources-support/career-services"
+      ]
+    },
+    {
+      "id": "pert-test-overview",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/programs/academic-resources-support/assessment-centers/pert-test",
+        "https://irsc.edu/faq",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/submit/placement-testing"
+      ]
+    },
+    {
+      "id": "dual-enrollment",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/programs/special-programs/dual-enrollment-measures",
+        "https://irsc.edu/programs/special-programs",
+        "https://irsc.edu/programs/special-programs/dual-enrollment"
+      ]
+    },
+    {
+      "id": "1098t-form",
+      "category": "narrative",
+      "passed": false,
+      "reasons": [
+        "evidence missing '1098-T'",
+        "evidence missing 'River Portal'",
+        "canonical page not in top 8"
+      ],
+      "top": []
+    },
+    {
+      "id": "make-payment",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/register-for-classes",
+        "https://irsc.edu/admissions/financial-aid/types-aid/loans",
+        "https://irsc.edu/admissions/military-veterans-services/va-benefits"
+      ]
+    },
+    {
+      "id": "financial-aid-disbursement",
+      "category": "narrative",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'drop period'"
+      ],
+      "top": [
+        "https://irsc.edu/admissions/financial-aid/receiving-and-using-your-financial-aid",
+        "https://irsc.edu/admissions/financial-aid/types-aid/grants",
+        "https://irsc.edu/admissions/financial-aid/types-aid/loans"
+      ]
+    },
+    {
+      "id": "florida-civic-literacy",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/programs/academic-resources-support/assessment-centers/florida-civic-literacy-competency-exam",
+        "https://irsc.edu/faq"
+      ]
+    },
+    {
+      "id": "access-canvas",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/programs/academic-resources-support/accessibility-privacy-policies",
+        "https://irsc.edu/programs/academic-resources-support/online-students",
+        "https://irsc.edu/rivermail"
+      ]
+    },
+    {
+      "id": "get-student-id-card",
+      "category": "narrative",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/get-your-student-id",
+        "https://irsc.edu/programs/academic-resources-support/assessment-centers/pert-test",
+        "https://irsc.edu/programs/academic-resources-support/assessment-centers"
+      ]
+    },
+    {
+      "id": "contradiction-residency-threshold",
+      "category": "contradiction",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/tuition-fees/residency-requirements",
+        "https://irsc.edu/admissions/tuition-fees",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/services-to-students/apply-for-admissions/residency-for-tuition-purposes"
+      ]
+    },
+    {
+      "id": "contradiction-app-fee",
+      "category": "contradiction",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/program/teacher-education",
+        "https://irsc.edu/admissions/apply",
+        "https://irsc.edu/faq"
+      ]
+    },
+    {
+      "id": "contradiction-add-drop-window",
+      "category": "contradiction",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/fall-2026",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar",
+        "https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar/spring-2027"
+      ]
+    },
+    {
+      "id": "contradiction-pell-max",
+      "category": "contradiction",
+      "passed": false,
+      "reasons": [
+        "evidence missing 'StudentAid.gov'"
+      ],
+      "top": [
+        "https://irsc.edu/admissions/financial-aid/types-aid/grants",
+        "https://irsc.edu/admissions/financial-aid/receiving-and-using-your-financial-aid",
+        "https://irsc.edu/admissions/financial-aid/faqs"
+      ]
+    },
+    {
+      "id": "contradiction-promise-eligibility",
+      "category": "contradiction",
+      "passed": true,
+      "reasons": [],
+      "top": [
+        "https://irsc.edu/admissions/promise",
+        "https://irsc.edu/admissions/financial-aid/types-aid/scholarships",
+        "https://irsc.edu/faq"
+      ]
+    }
+  ]
+}

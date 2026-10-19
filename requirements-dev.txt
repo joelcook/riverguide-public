@@ -1,0 +1,7 @@
+# Crawler, evals, and tests (refresh host and laptops; not the server image).
+-r requirements.txt
+anthropic==1.13.0
+requests
+beautifulsoup4
+lxml
+markdownify

@@ -1,0 +1,25 @@
+---
+url: https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness
+title: Catalog > Courses > PEL - PHYSICAL EDUCATION RECREATION WELLNESS
+updated: '2026-06-04'
+sha: 9c5dee726a00
+---
+
+# PEL - PHYSICAL EDUCATION RECREATION WELLNESS
+
+- [PEL-2211](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2211)
+- [PEL-2212](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2212)
+- [PEL-2214](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2214)
+- [PEL-2215](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2215)
+- [PEL-2216](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2216)
+- [PEL-2217](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2217)
+- [PEL-2219](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2219)
+- [PEL-2221](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2221)
+- [PEL-2321](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2321)
+- [PEL-2322](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2322)
+- [PEL-2324](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2324)
+- [PEL-2325](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2325)
+- [PEL-2621](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2621)
+- [PEL-2622](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2622)
+- [PEL-2624](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2624)
+- [PEL-2629](https://irsc.smartcatalogiq.com/en/current/catalog/courses/pel-physical-education-recreation-wellness/2000/pel-2629)

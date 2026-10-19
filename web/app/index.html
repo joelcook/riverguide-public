@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>RiverGuide · Indian River State College</title>
+    <meta name="description" content="Ask anything about Indian River State College. Answers come from the College's own web pages, with links you can check." />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="/irsc-theme.js"></script>
+    <link rel="preload" href="/fonts/aleo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body data-mode="welcome">
+    <a class="irsc-skip-link" href="#question">Skip to the question box</a>
+
+    <div class="rg-canvas">
+      <header class="rg-bar">
+        <a class="rg-wordmark" href="/">
+          <span class="rg-wordmark__name">RiverGuide</span>
+          <span class="rg-wordmark__eyebrow">Indian River State College</span>
+        </a>
+        <a class="rg-pill rg-pill--portal" href="https://go.irsc.edu/" target="_blank" rel="noopener noreferrer">
+          <span><span class="rg-pill__more">The River </span>Portal</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg>
+        </a>
+        <button type="button" class="rg-pill" id="new-chat" hidden>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12" /></svg>
+          New chat
+        </button>
+      </header>
+
+      <main id="main">
+        <section class="rg-hero" id="welcome" aria-labelledby="welcome-title">
+          <h1 id="welcome-title" class="rg-hello">Ask the River.</h1>
+          <p class="rg-lede">Deadlines, classes, financial aid, and everything else at Indian River State College. Start here.</p>
+        </section>
+
+        <ol class="rg-thread" id="thread" aria-live="polite"></ol>
+        <div class="rg-error" id="error" role="alert" hidden>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 2 17h16L10 3Zm0 5v4m0 2.5v.5" /></svg>
+          <p id="error-text"></p>
+          <button type="button" class="rg-link-button" id="retry" hidden>Try again</button>
+        </div>
+      </main>
+
+      <!-- Welcome: the question box sits on the photo card, and docks to the bottom of the window
+           once it scrolls away. Chat: the box is pinned to the bottom and the photos are hidden. -->
+      <div class="rg-dock" id="dock">
+        <div class="rg-compose">
+          <div class="rg-notice" id="blocked" role="alert" hidden>
+            <p class="rg-notice__title">Remove personal information</p>
+            <p id="blocked-reason"></p>
+            <p class="rg-highlighted" id="blocked-text"></p>
+          </div>
+          <p class="rg-notice rg-notice--quiet" id="pii-limited" role="status" hidden>
+            This browser couldn’t load name detection, so please don’t type names or street addresses.
+          </p>
+          <ul class="rg-suggestions" id="suggestions" role="listbox" aria-label="Suggested questions" hidden></ul>
+          <form class="rg-prompt" id="form">
+            <label for="question" class="rg-visually-hidden">Ask a question about Indian River State College</label>
+            <textarea
+              id="question"
+              rows="1"
+              maxlength="8000"
+              placeholder="Ask anything about the College…"
+              enterkeyhint="send"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="suggestions"
+            ></textarea>
+            <button type="submit" class="rg-send" id="ask" aria-label="Ask">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="rg-send__arrow"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="rg-send__wait"><circle cx="12" cy="12" r="8" /></svg>
+            </button>
+          </form>
+          <p class="rg-chars" id="chars-left" hidden></p>
+          <p class="rg-fine">RiverGuide can make mistakes. Check the linked pages.</p>
+        </div>
+
+        <!-- Photos: Indian River State College's own (irsc.edu media library), resized to AVIF. -->
+        <div class="rg-stage" role="group" aria-roledescription="slideshow" aria-label="Photos of Indian River State College">
+          <span class="rg-stage__anchor" id="dock-anchor" aria-hidden="true"></span>
+          <img
+            class="rg-slide rg-slide--friends"
+            src="/photos/friends-1600.avif"
+            srcset="/photos/friends-800.avif 800w, /photos/friends-1600.avif 1600w"
+            sizes="(min-width: 840px) 780px, 100vw"
+            width="1600"
+            height="1067"
+            alt="Two students in Indian River State College shirts laughing as they walk across campus"
+            fetchpriority="high"
+            data-active
+          />
+          <img
+            class="rg-slide rg-slide--fountain"
+            src="/photos/fountain-1600.avif"
+            srcset="/photos/fountain-800.avif 800w, /photos/fountain-1600.avif 1600w"
+            sizes="(min-width: 840px) 780px, 100vw"
+            width="1600"
+            height="1009"
+            alt="The Kight Center for Emerging Technologies, across a pond with a fountain and palm trees"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <img
+            class="rg-slide rg-slide--lawn"
+            src="/photos/lawn-1600.avif"
+            srcset="/photos/lawn-800.avif 800w, /photos/lawn-1600.avif 1600w"
+            sizes="(min-width: 840px) 780px, 100vw"
+            width="1600"
+            height="1067"
+            alt="Three students laughing together on the lawn outside a campus building"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <img
+            class="rg-slide rg-slide--aerial"
+            src="/photos/aerial-1600.avif"
+            srcset="/photos/aerial-800.avif 800w, /photos/aerial-1600.avif 1600w"
+            sizes="(min-width: 840px) 780px, 100vw"
+            width="1600"
+            height="900"
+            alt="Campus from the air: brick buildings, palm trees, and a blue gazebo on the green"
+            loading="lazy"
+            aria-hidden="true"
+          />
+          <div class="rg-stage__controls">
+            <button type="button" class="rg-round" id="slide-prev" aria-label="Previous photo">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5" /></svg>
+            </button>
+            <button type="button" class="rg-round" id="slide-pause" aria-label="Pause photos" data-playing="true">
+              <svg viewBox="0 0 20 20" aria-hidden="true" class="rg-round__pause"><path d="M7.5 5.5v9M12.5 5.5v9" /></svg>
+              <svg viewBox="0 0 20 20" aria-hidden="true" class="rg-round__play"><path d="M7 5.2v9.6l8-4.8-8-4.8Z" /></svg>
+            </button>
+            <button type="button" class="rg-round" id="slide-next" aria-label="Next photo">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="rg-starters" id="starters" aria-label="Example questions">
+        <li><button type="button" class="rg-chip" data-ask>When is the last day to drop a class this term?</button></li>
+        <li><button type="button" class="rg-chip" data-ask>How much is tuition per credit hour?</button></li>
+        <li><button type="button" class="rg-chip" data-ask>How do I apply for financial aid?</button></li>
+        <li><button type="button" class="rg-chip" data-ask>Is ENC 1101 offered online in Fall 2026?</button></li>
+      </ul>
+    </div>
+
+    <section class="rg-manifesto" aria-labelledby="manifesto-title">
+      <h2 id="manifesto-title" class="rg-visually-hidden">About RiverGuide</h2>
+      <p class="rg-manifesto__text" id="manifesto">
+        RiverGuide
+        <span class="rg-inline rg-inline--go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" /></svg></span>
+        answers only from
+        <span class="rg-inline rg-inline--photos" aria-hidden="true"
+          ><img src="/photos/thumb-massey.avif" alt="" width="200" height="200" loading="lazy" /><img
+            src="/photos/thumb-fountain.avif"
+            alt=""
+            width="200"
+            height="200"
+            loading="lazy" /><img src="/photos/thumb-aerial.avif" alt="" width="200" height="200" loading="lazy"
+        /></span>
+        the College’s own pages. It’s free, it’s open when offices aren’t, and it stops
+        <span class="rg-inline rg-inline--lock" aria-hidden="true"
+          ><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" /></svg
+        ></span>
+        personal details before they leave your device.
+      </p>
+    </section>
+
+    <section class="rg-why" aria-labelledby="why-title">
+      <h2 id="why-title" class="rg-visually-hidden">Why RiverGuide</h2>
+
+      <article class="rg-feature">
+        <div class="rg-tile rg-tile--pages" aria-hidden="true">
+          <div class="rg-marquee">
+            <p class="rg-marquee__row">
+              <span>Financial Aid</span><span>Tuition &amp; Fees</span><span class="rg-hot">Register for Classes</span><span>Advising</span><span>Promise Program</span><span>Library</span>
+            </p>
+            <p class="rg-marquee__row">
+              <span>Nursing</span><span>Academic Calendar</span><span>Dental Hygiene</span><span>Fire Science</span><span class="rg-hot">Graduation</span><span>Welding</span>
+            </p>
+            <p class="rg-marquee__row">
+              <span>DirectConnect to UCF</span><span>Campus Safety</span><span>RiverAlert</span><span class="rg-hot">Transfer Credits</span><span>Transit</span>
+            </p>
+            <p class="rg-marquee__row">
+              <span>Hallstrom Planetarium</span><span>Athletics</span><span>Adult Education</span><span>Child Development Center</span><span>Honor Societies</span>
+            </p>
+            <p class="rg-marquee__row">
+              <span>Radiography</span><span class="rg-hot">Diplomas &amp; Certificates</span><span>Culinary Management</span><span>Law Enforcement</span><span>Cosmetology</span>
+            </p>
+          </div>
+        </div>
+        <div class="rg-feature__text">
+          <h3><span id="page-count">2,386</span> College pages, one question away.</h3>
+          <p>No more clicking from page to page. RiverGuide reads irsc.edu and the College catalog for you, and they’re re-checked every night.</p>
+        </div>
+      </article>
+
+      <article class="rg-feature">
+        <div class="rg-tile rg-tile--private" aria-hidden="true">
+          <div class="rg-mock rg-mock--message">
+            <p>Hi, I’m <mark>Jordan Rivera</mark> and I live at <mark>123 Main St</mark>. Which campus is closest to me?</p>
+          </div>
+          <p class="rg-mock__caught">
+            <svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" /></svg>
+            Caught on your device. Nothing was sent.
+          </p>
+        </div>
+        <div class="rg-feature__text">
+          <h3>Your information stays with you.</h3>
+          <p>Names, ID numbers, and addresses are caught in your browser before anything is sent, and conversations aren’t stored.</p>
+        </div>
+      </article>
+
+      <article class="rg-feature">
+        <div class="rg-tile rg-tile--sources" aria-hidden="true">
+          <img src="/photos/laptop-800.avif" alt="" width="800" height="800" loading="lazy" />
+          <div class="rg-mock rg-mock--answer">
+            <span class="rg-mock__line"></span>
+            <span class="rg-mock__line"></span>
+            <span class="rg-mock__line rg-mock__line--short"></span>
+            <ul>
+              <li><span class="rg-source-host">irsc.edu</span><span class="rg-source-title">Tuition &amp; Fees</span></li>
+              <li><span class="rg-source-host">irsc.smartcatalogiq.com</span><span class="rg-source-title">Academic Calendar</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rg-feature__text">
+          <h3>Clear answers. Official sources.</h3>
+          <p>Every answer links the College page it came from, so you can check it yourself.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="rg-footer">
+      <nav class="rg-footer__links" aria-label="Indian River State College">
+        <a href="https://irsc.edu/">irsc.edu</a>
+        <a href="https://go.irsc.edu/">The River Portal</a>
+        <a href="https://irsc.smartcatalogiq.com/en/current/catalog/academic-calendar">Academic Calendar</a>
+        <a href="https://irsc.smartcatalogiq.com/en/current/catalog">College Catalog</a>
+      </nav>
+      <p class="rg-giant" aria-hidden="true">RiverGuide</p>
+      <div class="rg-footer__row">
+        <p>
+          RiverGuide can make mistakes, so check the linked pages. It can’t see your records; use The River Portal for grades,
+          schedules, and balances. Photos: Indian River State College. Privacy filter:
+          <a href="https://github.com/nationaldesignstudio/rampart-edge" target="_blank" rel="noopener noreferrer">Rampart Edge</a>
+          by National Design Studio.
+        </p>
+        <div class="irsc-theme-switch" role="group" aria-label="Color theme" data-irsc-theme-switch>
+          <button type="button" data-irsc-theme-value="light" aria-pressed="true">Light</button>
+          <button type="button" data-irsc-theme-value="dark" aria-pressed="false">Dark</button>
+          <button type="button" data-irsc-theme-value="auto" aria-pressed="false">Auto</button>
+        </div>
+      </div>
+    </footer>
+    <noscript>RiverGuide needs JavaScript. You can find the same information at <a href="https://irsc.edu">irsc.edu</a>.</noscript>
+  </body>
+</html>

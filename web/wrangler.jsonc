@@ -1,0 +1,30 @@
+// RiverGuide's Worker. Before deploying, put in your own domain, D1 database id
+// (`bunx wrangler d1 create riverguide`), and KV namespace id (`bunx wrangler kv namespace create
+// riverguide-cache`). Production uses Qwen through the model gateway (deploy/omarchy/model-gateway.ts)
+// behind its own tunnel (OLLAMA_API_KEY is a secret). `bun run dev` overrides OLLAMA_URL from
+// .dev.vars to reach Ollama directly. Deploy: see README.
+{
+  "name": "riverguide",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "riverguide.example.edu", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "rules": [{ "type": "Text", "globs": ["**/*.md"], "fallthrough": true }],
+  "d1_databases": [
+    { "binding": "DB", "database_name": "riverguide", "database_id": "00000000-0000-0000-0000-000000000000" }
+  ],
+  "kv_namespaces": [{ "binding": "CACHE", "id": "00000000000000000000000000000000" }],
+  "ratelimits": [{ "name": "CHAT_LIMIT", "namespace_id": "1001", "simple": { "limit": 20, "period": 60 } }],
+  "vars": {
+    "MODEL_PROVIDER": "ollama",
+    "MODEL_ID": "qwen3.8:27b",
+    "OLLAMA_URL": "https://model.example.edu/v1",
+    "SECTIONS_MAX_AGE_HOURS": "24"
+  },
+  "observability": { "enabled": true }
+}

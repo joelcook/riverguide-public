@@ -1,0 +1,17 @@
+---
+url: https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology
+title: Catalog > Courses > SLS - PSYCHOLOGY
+updated: '2026-06-04'
+sha: 3333641c47a2
+---
+
+# SLS - PSYCHOLOGY
+
+- [SLS-0341](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0341)
+- [SLS-0460](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0460)
+- [SLS-0461](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0461)
+- [SLS-0462](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0462)
+- [SLS-0463](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0463)
+- [SLS-0464](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0464)
+- [SLS-0933](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0933)
+- [SLS-0944](https://irsc.smartcatalogiq.com/en/current/catalog/courses/sls-psychology/0000/sls-0944)
