@@ -2,11 +2,11 @@
 //   collegeContacts()   the public phone numbers and street addresses on them, so Rampart Edge lets a
 //                       student mention the College's own ("I called 772-462-4772…")
 //   collegeQuestions()  the typeahead's dictionary (app/typeahead.ts): the page's own questions
-//                       (app/examples.ts and the starters), the College's FAQ questions, and three
-//                       questions about every catalog course
+//                       (app/examples.ts, led by what students ask most, and the starters), the
+//                       College's FAQ questions, and three questions about every catalog course
 import { Glob } from "bun";
 import type { Allowlist } from "@nationaldesignstudio/rampart-edge";
-import { EXAMPLES, QUESTIONS } from "../app/examples";
+import { EXAMPLES, QUESTIONS, TOP_QUESTIONS } from "../app/examples";
 import type { Entry } from "../app/typeahead";
 
 const CORPUS = `${import.meta.dir}/../../corpus/`;
@@ -98,6 +98,8 @@ export async function collegeQuestions(): Promise<Entry[]> {
     seen.add(key);
     entries.push(entry);
   };
+  // What students asked most leads, in its own order; then the page's other questions.
+  for (const [i, text] of TOP_QUESTIONS.entries()) add({ text, prior: 2 - i / 100 });
   const chips = [...(await Bun.file(INDEX_HTML).text()).matchAll(/data-ask[^>]*>([^<]+)</g)].map((m) => m[1].trim());
   for (const text of [...chips, ...EXAMPLES, ...QUESTIONS]) add({ text, prior: 1 });
   for (const { url, body } of all) {
