@@ -41,7 +41,7 @@ The first version compiled the College's pages into an LLM wiki plus eleven fact
   <tr>
     <td width="50%" valign="top">
       <img src="docs/screenshots/typeahead.webp" alt="The question box with 'financial ai' typed and three suggested questions about financial aid">
-      <p><b>Typeahead with no network calls.</b> 3,691 questions from the College's own pages (FAQ questions and three per catalog course), matched in the browser, typos forgiven. Nothing typed is sent.</p>
+      <p><b>Typeahead with no network calls.</b> 3,696 questions, led by the 19 that students asked RiverGuide 1 most, then the College's own FAQ questions and three per catalog course. Matched in the browser, typos forgiven. Nothing typed is sent.</p>
     </td>
     <td width="50%" valign="top">
       <img src="docs/screenshots/privacy.webp" alt="A message with a name, student ID, and street address highlighted in yellow and a notice asking the student to remove them">
